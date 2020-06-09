@@ -1,9 +1,15 @@
 
 
+@font-face {
+    font-family: "DIN Alternate", Arial;
+}
+
 /* Main Styling */
+
 
 body {
     color: white;
+    font-family: "DIN Alternate", Arial;
 }
 
 
@@ -11,12 +17,11 @@ body {
 .header {
     display: flex;
     background-color: black;
-    height: 100px;
+    height: auto;
     color: white;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
-    padding: 30px 20px;
+    padding: 10px;
 }
 
 .logo img {
@@ -33,6 +38,7 @@ body {
     width: 75%;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 span {
@@ -46,6 +52,7 @@ span {
 }
 
 .burger img {
+    display: flex;
     width: 70px;
     height: 50px;
 }
@@ -65,17 +72,26 @@ span {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 34px;
 }
 
 h3 {
-    font-size: 33px;
+    font-size: 20px;
+}
+
+.button-link {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
 }
 
 .main h1 {
     width: 100%;
     position: absolute;
-    top: 60%;
+    top: 58%;
     text-align: left;
     padding-left: 40px;
 }
@@ -83,14 +99,14 @@ h3 {
 .main h3 {
     width: 100%;
     position: absolute;
-    top: 55%;
+    top: 50%;
     text-align: left;
     padding-left: 40px;
 }
 
 .main button {
     position: absolute;
-    top: 75%;
+    top: 76%;
     margin-left: 40px;
     height: 50px;
     width: 150px;
